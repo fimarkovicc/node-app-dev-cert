@@ -1,5 +1,4 @@
 {
-    "type": "module",
     "name": "node",
     "version": "1.0.0",
     "main": "data.js",

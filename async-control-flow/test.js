@@ -1,24 +1,37 @@
-const { promisify } = require('util')
+// setinterval , settimeout
+// const intervalId = setInterval(
+//     (name) => {
+//         console.log('hello...' + name)
+//     },
+//     1000,
+//     'Filip'
+// )
 
-function print(error, content) {
-    if (error) {
-        console.log(error)
-        return
-    }
-    console.log(content)
-}
+// setTimeout(() => {
+//     clearInterval(intervalId)
+// }, 4000)
 
-function callback(cb) {
-    console.log(cb)
-    setTimeout(() => {
-        console.log('something...')
-        cb(null, 'success')
-    }, 500)
-}
+// const b = 'b'
+// const a = new Promise((resolve, reject) => {
+//     setTimeout(resolve, 200, 'a')
+// })
+// const c = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log('abc')
+//         resolve('c')
+//     }, 1000)
+// })
+// Promise.race([a, c])
+//     .then((results) => console.log(results))
+//     .catch((error) => console.log(error))
 
-// callback(print)
+// try {
+//     console.log(1)
+//     console.log(2)
+//     throw new Error('some error')
+//     console.log(3)
+// } catch (error) {
+//     console.log(error)
+// }
 
-const promise = promisify(callback)
-promise()
-    .then((res) => console.log(res))
-    .catch((err) => console.error(err))
+// console.log('outside')
