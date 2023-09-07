@@ -1,0 +1,23 @@
+const path = require("path")
+const fs = require("fs")
+
+// console.log(__filename)
+// console.log(__dirname)
+
+// console.log(path.join(__dirname, "sample.txt"))
+// console.log(path.isAbsolute(path.join(__dirname, "sample.txt")));
+// console.log(path.isAbsolute("../test/demo_path.js"))
+// console.log(path.relative("C:\\Users\\fma\\Desktop\\private repos\\node-app-dev-cert\\file-system\\index.js", "C:\\Users\\fma\\Desktop\\private repos\\node-app-dev-cert\\index.js"))
+// console.log(path.resolve('foo', 'bar', 'baz'));
+// console.log(path.resolve('/foo', 'bar', 'baz'));
+// console.log(path.normalize('/foo/../bar//baz'));
+// console.log('filename parsed:', path.parse(__filename))
+// console.log('filename basename:', path.basename(__filename))
+// console.log('filename dirname:', path.dirname(__filename))
+// console.log('filename extname:', path.extname(__filename))
+
+// const file = fs.readFileSync(__filename)
+const file = fs.readFileSync(__filename)
+// console.log(file);
+// console.log(path.join(__dirname, "file.txt"));
+fs.writeFileSync(path.join(__dirname, "file.txt"), file)
