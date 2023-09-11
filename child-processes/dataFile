@@ -1,0 +1,15 @@
+const { exec } = require("child_process")
+const os = require("os")
+
+exec("copy exec.js dataFile", (err, stdout, stderr)=>{
+// exec("pwd", (err, stdout, stderr)=>{
+    if(err) {
+        console.error(err)
+        return
+    }
+    if(stderr) {
+        console.error(stderr)
+        return
+    }
+    console.log(stdout)
+})
