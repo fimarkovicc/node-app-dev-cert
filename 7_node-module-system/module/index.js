@@ -1,0 +1,6 @@
+const pino = require('pino')
+const format = require('./format.js')
+const logger = pino()
+logger.info('package started')
+console.log(format.upper('sefoijwe wekjfew'))
+// process.stdin.resume()

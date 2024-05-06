@@ -1,0 +1,19 @@
+{
+	"name": "labs-1",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "node test"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"nonsynchronous": "^1.2.0"
+	},
+	"dependencies": {
+		"fastify": "~2.0.0",
+		"rfdc": "1.1.3"
+	}
+}
